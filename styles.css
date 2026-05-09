@@ -1,0 +1,64 @@
+body {
+    background: radial-gradient(circle, #4a0000 0%, #1a0000 100%);
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-container {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #555;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.screen-shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px); }
+    20% { transform: translate(-3px, 0px); }
+    40% { transform: translate(3px, 2px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    background: transparent;
+    color: #ff4444;
+    border: 1px solid #ff4444;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff4444;
+    color: black;
+    box-shadow: 0 0 20px #ff4444;
+}
+
+#story {
+    line-height: 1.8;
+    min-height: 120px;
+    font-size: 18px;
+}
